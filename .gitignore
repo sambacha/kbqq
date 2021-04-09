@@ -1,7 +1,11 @@
 .DS_Store
 .idea
 .vscode
-
+!node_modules/kafka-connect
+!kafka-node/
+!kafkajs/
+!node_modules/kafkajs/
+!node_modules/kafka-connect/
 # Logs
 logs
 *.log
