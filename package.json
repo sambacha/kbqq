@@ -1,48 +1,48 @@
 {
-    "name": "bigquery-kafka-connect",
-    "version": "3.9.0",
-    "description": "kafka connect connector for Google BigQuery",
-    "main": "index.js",
-    "scripts": {
-        "test": "istanbul cover _mocha -- --recursive --exit --timeout 12500 -R spec test/int && istanbul check-coverage --statements 80",
-        "test-ci": "istanbul cover _mocha --report lcovonly -- --exit --timeout 12500 -R spec test/int && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/onefit/bigquery-kafka-connect.git"
-    },
-    "keywords": [
-        "kafka",
-        "kafka-connect",
-        "connect",
-        "connector",
-        "google",
-        "bigquery"
-    ],
-    "author": "Holger Adam",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/nodefluent/bigquery-kafka-connect/issues"
-    },
-    "homepage": "https://github.com/nodefluent/bigquery-kafka-connect#readme",
-    "preferGlobal": true,
-    "bin": {
-        "nkc-bigquery-source": "bin/nkc-bigquery-source.js",
-        "nkc-bigquery-sink": "bin/nkc-bigquery-sink.js"
-    },
-    "dependencies": {
-        "@google-cloud/bigquery": "^5.5.0",
-        "async": "^3.2.0",
-        "kafka-connect": "^4.0.0"
-    },
-    "devDependencies": {
-        "coveralls": "^3.0.6",
-        "istanbul": "^0.4.5",
-        "log4bro": "^3.11.0",
-        "mocha": "^6.2.0",
-        "mocha-lcov-reporter": "^1.3.0",
-        "sinek": "^7.30.1",
-        "testdouble": "^3.12.4",
-        "uuid": "^3.3.3"
-    }
+  "name": "bigquery-kafka-connect",
+  "version": "4.0.0",
+  "description": "kafka connect connector for Google BigQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- --recursive --exit --timeout 12500 -R spec test/int && istanbul check-coverage --statements 80",
+    "test-ci": "istanbul cover _mocha --report lcovonly -- --exit --timeout 12500 -R spec test/int && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/onefit/bigquery-kafka-connect.git"
+  },
+  "keywords": [
+    "kafka",
+    "kafka-connect",
+    "connect",
+    "connector",
+    "google",
+    "bigquery"
+  ],
+  "author": "Holger Adam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodefluent/bigquery-kafka-connect/issues"
+  },
+  "homepage": "https://github.com/nodefluent/bigquery-kafka-connect#readme",
+  "preferGlobal": true,
+  "bin": {
+    "nkc-bigquery-source": "bin/nkc-bigquery-source.js",
+    "nkc-bigquery-sink": "bin/nkc-bigquery-sink.js"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.5.0",
+    "async": "^3.2.0",
+    "kafka-connect": "^4.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.6",
+    "istanbul": "^0.4.5",
+    "log4bro": "^3.11.0",
+    "mocha": "^6.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "sinek": "^7.30.1",
+    "testdouble": "^3.12.4",
+    "uuid": "^3.3.3"
+  }
 }
